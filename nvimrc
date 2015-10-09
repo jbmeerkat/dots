@@ -206,3 +206,7 @@ nn <silent> <Leader>s <C-w>s
 " hate holding <Shift> every type i need to enter a cmd
 nn ; :
 nn : ;
+
+
+" useful functions
+nn =j :%!python -m json.tool<CR> " format json
