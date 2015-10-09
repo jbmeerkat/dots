@@ -55,7 +55,6 @@ color base16-tomorrow
 set cursorline
 :hi CursorLine ctermfg=NONE ctermbg=237
 :hi CursorLineNr ctermbg=243
-" :hi LineNr ctermfg=NONE ctermbg=232
 
 set guioptions-=T
 set guioptions-=r
@@ -173,9 +172,6 @@ autocmd! User GoyoEnter
 autocmd! User GoyoLeave
 autocmd  User GoyoEnter nested call <SID>goyo_enter()
 autocmd  User GoyoLeave nested call <SID>goyo_leave()
-
-" vim-flog
-" :silent exe "g:flog_enable"
 
 " ignore some shit
 set wildignore+=.git,.gitkeep                                     " git related
