@@ -3,13 +3,7 @@ set nocompatible
 let mapleader="\<Space>"
 
 call plug#begin('~/.nvim/plugged')
-" move plugins to separate files
 Plug 'benekastah/neomake' " async linter
-Plug 'vim-ruby/vim-ruby'
-Plug 'jimenezrick/vimerl'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-haml'
-Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary' " comment stuff out
@@ -20,9 +14,10 @@ Plug 'chriskempson/base16-vim' " color themes
 Plug 'junegunn/goyo.vim' " distraction-free writing
 Plug 'scrooloose/nerdtree' " tree explorer
 
-if filereadable(expand("~/.nvim/plugins/clojure"))
-  source ~/.nvim/plugins/clojure
-endif
+" load language specific plugins
+for f in split(glob('~/.nvim/plugins/*.vim'), '\n')
+  exe 'source' f
+endfor
 
 call plug#end()
 
@@ -163,9 +158,8 @@ endfunction
 function! s:goyo_leave()
   set scrolloff=5
   set background=dark
-  :hi CursorLine ctermfg=NONE ctermbg=235
-  :hi CursorLineNr ctermbg=LightGrey
-  :hi LineNr ctermfg=NONE ctermbg=16
+  :hi CursorLine ctermfg=NONE ctermbg=237
+  :hi CursorLineNr ctermbg=243
 endfunction
 
 autocmd! User GoyoEnter
@@ -207,6 +201,5 @@ nn <silent> <Leader>s <C-w>s
 nn ; :
 nn : ;
 
-
 " useful functions
-nn =j :%!python -m json.tool<CR> " format json
+nn =j :%!python -m json.tool<CR>        " format json
