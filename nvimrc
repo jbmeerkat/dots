@@ -3,16 +3,16 @@ set nocompatible
 let mapleader="\<Space>"
 
 call plug#begin('~/.nvim/plugged')
-Plug 'benekastah/neomake' " async linter
-Plug 'tpope/vim-fugitive' " git wrapper
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary' " comment stuff out
-Plug 'kien/ctrlp.vim' " fuzzy finder
-Plug 'rking/ag.vim' " better grep
-Plug 'itchyny/lightline.vim' " powerful status line
+Plug 'benekastah/neomake'      " async linter
+Plug 'tpope/vim-fugitive'      " git wrapper
+Plug 'tpope/vim-surround'      " quoting/parenthesizing
+Plug 'tpope/vim-commentary'    " comment stuff out
+Plug 'kien/ctrlp.vim'          " fuzzy finder
+Plug 'rking/ag.vim'            " better grep
+Plug 'itchyny/lightline.vim'   " powerful status line
 Plug 'chriskempson/base16-vim' " color themes
-Plug 'junegunn/goyo.vim' " distraction-free writing
-Plug 'scrooloose/nerdtree' " tree explorer
+Plug 'junegunn/goyo.vim'       " distraction-free writing
+Plug 'scrooloose/nerdtree'     " tree explorer
 Plug 'wakatime/vim-wakatime'   " time tracking and metrics
 Plug 'xolox/vim-notes'         " notes
 Plug 'xolox/vim-misc'          " vim-notes dependency
