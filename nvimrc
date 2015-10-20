@@ -13,6 +13,7 @@ Plug 'itchyny/lightline.vim' " powerful status line
 Plug 'chriskempson/base16-vim' " color themes
 Plug 'junegunn/goyo.vim' " distraction-free writing
 Plug 'scrooloose/nerdtree' " tree explorer
+Plug 'wakatime/vim-wakatime'   " time tracking and metrics
 
 " load language specific plugins
 for f in split(glob('~/.nvim/plugins/*.vim'), '\n')
