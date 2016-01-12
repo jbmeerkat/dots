@@ -24,6 +24,10 @@ export LC_ALL=en_GB.UTF-8
 export LANG=en_GB.UTF-8
 
 bindkey '^r' history-incremental-search-backward
+bindkey '^a' beginning-of-line
+bindkey '^e' end-of-line
+bindkey '^f' emacs-forward-word
+bindkey '^b' emacs-backward-word
 
 eval "$(rbenv init -)"
 
