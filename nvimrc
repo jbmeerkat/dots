@@ -207,3 +207,5 @@ nn : ;
 
 " useful functions
 nn =j :%!python -m json.tool<CR>        " format json
+
+let g:haskell_conceal_wide = 1
