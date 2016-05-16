@@ -139,6 +139,11 @@ if executable("ag")
   let g:ctrlp_use_caching = 0
 endif
 
+" CtrlP customization
+if executable("ag")
+  let g:ctrlp_user_command = 'ag %s --files-with-matches -g ""'
+endif
+
 " NERDTree customization
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
