@@ -40,6 +40,10 @@ set laststatus=2       " always show status line (even on single window)
 set showcmd            " display incomplete commands
 set showmode           " show current mode
 
+" title
+set title
+set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)
+
 " brackets
 set showmatch          " show matching brackets
 
