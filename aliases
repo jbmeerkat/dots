@@ -1,0 +1,12 @@
+# Git aliases
+alias gst='git status'
+alias ga='git add'
+alias gdca='git diff --cached'
+alias gc='git commit'
+alias gs='git show'
+alias gsh='git show HEAD'
+alias glgg='git log --graph'
+alias ggpull='git pull origin "$(git rev-parse --abbrev-ref HEAD)"'
+alias gb='git branch'
+alias gbg='git branch | grep'
+alias gco='git checkout'
