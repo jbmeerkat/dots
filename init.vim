@@ -13,6 +13,7 @@ ino <left> <nop>
 ino <right> <nop>
 
 let mapleader="\<Space>"
+set guicursor=
 
 call plug#begin('~/.nvim/plugged')
 Plug 'easymotion/vim-easymotion' " motions on steroids
