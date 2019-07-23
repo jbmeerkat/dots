@@ -142,12 +142,7 @@ augroup END
 " line length rulers
 set colorcolumn=80,100
 
-" https://github.com/neovim/neovim/issues/2048
-if has('nvim')
-  nmap <BS> <C-W>h
-
-  let g:python3_host_prog="/usr/local/bin/python3"
-endif
+let g:python3_host_prog="/usr/local/bin/python3"
 
 " copy file path
 nnoremap <leader>cf :let @*=expand("%")<CR> " relative
