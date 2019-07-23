@@ -45,6 +45,10 @@ if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
 
+if [ -f ~/.git_helpers ]; then
+  . ~/.git_helpers
+fi
+
 if [ -f ~/.zsh_login ]; then
   . ~/.zsh_login
 fi
