@@ -127,6 +127,8 @@ set autoread
 set foldlevelstart=20
 set foldmethod=syntax
 
+set clipboard=unnamedplus
+
 " ctags
 set tags=.tags
 
