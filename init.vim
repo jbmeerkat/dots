@@ -125,6 +125,7 @@ set ruler
 set autoread
 
 set foldlevelstart=20
+set foldmethod=syntax
 
 " ctags
 set tags=.tags
