@@ -148,7 +148,11 @@ let g:python3_host_prog="/usr/local/bin/python3"
 nnoremap <leader>cf :let @*=expand("%")<CR> " relative
 nnoremap <leader>cF :let @*=expand("%:p")<CR> " absolute
 
-nnoremap <leader>h :noh<cr> " turn of highlighting
+" turn off highlight
+nnoremap <leader>h :noh<cr>
+
+" search for visually selected text in the opened buffer
+vn // y/<C-R>"<CR>
 
 " splits
 nn <silent> <C-l> <C-w>l
