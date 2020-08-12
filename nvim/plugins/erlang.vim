@@ -1,1 +1,1 @@
-Plug 'jimenezrick/vimerl'
+Plug 'jimenezrick/vimerl', { 'for': 'erlang' }
