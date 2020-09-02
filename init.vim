@@ -243,10 +243,15 @@ set wildignore+=.idea/**                                          " intellij ide
 " strip trailing whitespaces
 autocmd BufWritePre * :%s/\s\+$//e
 
-" lint code with neomake on save
+" Neomake
+" lint code on save
 autocmd! BufWritePost * Neomake
 let g:neomake_error_sign = { 'text': '>>', 'texthl': 'ErrorMsg' }
 let g:neomake_warning_sign = { 'text': '>>', 'texthl': 'WarningMsg' }
+
+" use proper Python executable
+let g:neomake_python_python_exe = 'python3'
+
 
 " splits
 " create window splits easier
