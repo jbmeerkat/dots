@@ -82,11 +82,10 @@ set noswapfile
 set nowritebackup
 
 set background=light
-" colorscheme base16-google-light
-" colorscheme base16-darktooth
 colorscheme distilled
 set termguicolors
 hi NonText guifg=bg
+let &fcs='eob: ' " hide tildas on empty lines
 
 " for the sake of performance
 set nocursorline " when turned on causes redraw of all the lines
@@ -100,7 +99,7 @@ set guioptions-=R
 set guioptions-=L
 
 if has("gui_running")
-  set guifont=Input\ Mono\ 13
+  set guifont=Fira\ Code\ 13
 end
 
 " numbers
