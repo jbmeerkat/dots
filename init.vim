@@ -38,9 +38,9 @@ Plug 'terryma/vim-multiple-cursors' " multicursor
 
 Plug 'wlangstroth/vim-racket'
 
-Plug 'sevko/vim-nand2tetris-syntax'
+" Plug 'sevko/vim-nand2tetris-syntax'
 
-" Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 
 " load language specific plugins
 for f in split(glob('~/.nvim/plugins/*.vim'), '\n')
@@ -108,6 +108,7 @@ set number
 
 set tabstop=2
 set shiftwidth=2
+
 set softtabstop=2
 set expandtab
 set nowrap
@@ -139,7 +140,7 @@ augroup BgHighlight
 augroup END
 
 " line length rulers
-set colorcolumn=80,100
+" set colorcolumn=80,100
 
 let g:python3_host_prog="/usr/local/bin/python3"
 
