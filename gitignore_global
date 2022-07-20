@@ -1,0 +1,15 @@
+.nvimrc
+.DS_Store
+.tags_sorted_by_file
+.tags
+.irbrc
+.pryrc
+.rspec_status
+.capistrano
+.agignore
+.swp
+*.swp
+Vagrantfile
+useful_patches/*
+*.mwb
+.idea
