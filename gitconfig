@@ -1,0 +1,28 @@
+[core]
+	excludesfile = /Users/alex/.gitignore_global
+	editor = nvim
+  commentchar = ">"
+	autocrlf = input
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = auto
+[commit]
+  gpgsign = true
+  template = ~/.gitmessage
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[alias]
+	restore = !git checkout $(git rev-list -n 1 HEAD -- \"$1\")^ -- \"$1\"
+[init]
+	templatedir = ~/.git-templates
+[pull]
+	ff = only
+	default = current
+[push]
+	default = current
